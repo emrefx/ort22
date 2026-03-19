@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerimiz | Ortaklar İzolasyon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #030811; color: white; }
+        .project-card { 
+            position: relative; 
+            overflow: hidden; 
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(10, 31, 51, 0.9) 0%, transparent 100%);
+            opacity: 0;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        .project-card:hover .project-overlay { opacity: 1; }
+        .project-card:hover img { transform: scale(1.1); transition: 0.6s; }
+        .text-glow { text-shadow: 0 0 10px rgba(74, 222, 255, 0.5); color: #4adeff; }
+        
+        /* Filtre Butonları */
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: 99px;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: #4adeff;
+            color: #030811;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="py-20 px-6">
+    <div class="container mx-auto">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 text-glow italic underline decoration-white/5">PROJELERİMİZ</h1>
+            <p class="text-white/50 max-w-xl mx-auto">Ortaklar İzolasyon güvencesiyle tamamladığımız, İzmir'in dört bir yanındaki referans çalışmalarımız.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="filter-btn active">TÜMÜ</button>
+            <button class="filter-btn uppercase">Bohçalama</button>
+            <button class="filter-btn uppercase">Epoksi</button>
+            <button class="filter-btn uppercase">Çatı & Oluk</button>
+            <button class="filter-btn uppercase">Sürme İzolasyon</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card h-80">
+                <img src="https://images.unsplash.com/photo-1503387762-592dee582a1b?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="Bohçalama Projesi">
+                <div class="project-overlay">
+                    <span class="text-xs font-bold text-cyan-400 mb-1 uppercase tracking-widest">Temel Bohçalama</span>
+                    <h3 class="text-xl font-black text-white leading-tight">Müteahhit Sitesi - Gaziemir</h3>
+                    <p class="text-white/70 text-sm mt-2 font-light italic">5000 m² PVC Membran Uygulaması</p>
+                </div>
+            </div>
+
+            <div class="project-card h-80">
+                <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="Epoksi Projesi">
+                <div class="project-overlay">
+                    <span class="text-xs font-bold text-cyan-400 mb-1 uppercase tracking-widest">Epoksi Zemin</span>
+                    <h3 class="text-xl font-black text-white leading-tight">Lojistik Depo - Torbalı</h3>
+                    <p class="text-white/70 text-sm mt-2 font-light italic">Anti-statik ve Tozumasız Zemin Kaplama</p>
+                </div>
+            </div>
+
+            <div class="project-card h-80">
+                <img src="https://images.unsplash.com/photo-1632759162403-f1a3a246b57b?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="Çatı Projesi">
+                <div class="project-overlay">
+                    <span class="text-xs font-bold text-cyan-400 mb-1 uppercase tracking-widest">Çatı Aktarma</span>
+                    <h3 class="text-xl font-black text-white leading-tight">Müstakil Villa - Urla</h3>
+                    <p class="text-white/70 text-sm mt-2 font-light italic">Kiremit Altı İzolasyon ve Gizli Dere</p>
+                </div>
+            </div>
+
+            <div class="project-card h-80">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800" class="w-full h-full object-cover" alt="İzolasyon">
+                <div class="project-overlay">
+                    <span class="text-xs font-bold text-cyan-400 mb-1 uppercase tracking-widest">Sürme İzolasyon</span>
+                    <h3 class="text-xl font-black text-white leading-tight">Teras Yalıtımı - Çeşme</h3>
+                    <p class="text-white/70 text-sm mt-2 font-light italic">UV Dayanımlı Poliüretan Kaplama</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 text-center">
+            <a href="index.html" class="inline-block border border-white/20 px-10 py-4 rounded-full hover:bg-white hover:text-blue-900 transition font-bold uppercase tracking-widest text-sm italic">
+                Sizin de Bir Projeniz mi Var? <span class="text-cyan-400 ml-2 font-black italic">TEKLİF ALIN →</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

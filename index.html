@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortaklar İzolasyon | Su Yalıtımında Profesyonel Çözüm | İzmir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Derin Kozmik Mavi Arka Plan (Senin Görselin Gibi) */
+        .bg-cosmic-deep {
+            background: radial-gradient(circle at center, #0a1f33 0%, #030811 100%);
+            position: relative;
+        }
+
+        /* Arka plandaki hafif yıldız efektleri */
+        .stars {
+            background-image: radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 1px);
+            background-size: 50px 50px;
+            position: absolute;
+            inset: 0;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        /* Neon Mavi Parlama (Text Glow) */
+        .text-glow-blue {
+            color: #4adeff;
+            text-shadow: 0 0 10px rgba(74, 222, 255, 0.5), 
+                         0 0 20px rgba(74, 222, 255, 0.4), 
+                         0 0 30px rgba(74, 222, 255, 0.3);
+        }
+
+        /* Neon Mavi Parlama (Button Glow) */
+        .btn-glow-blue {
+            background-color: #0d82d3;
+            box-shadow: 0 0 20px rgba(13, 130, 211, 0.7);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .btn-glow-blue:hover {
+            box-shadow: 0 0 30px rgba(13, 130, 211, 1);
+        }
+
+        /* Turuncu Telefon Parlama */
+        .btn-glow-orange {
+            background-color: #f97316;
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.7);
+        }
+
+        /* WhatsApp Sabit Butonu */
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            font-size: 24px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-cosmic-deep text-white min-h-screen">
+    <div class="stars"></div>
+
+    <nav class="relative z-10 py-6 px-4 md:px-10 border-b border-white/5">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 0L0 6.22222V16.8889C0 24.8889 5.8 31.4133 14 32C22.2 31.4133 28 24.8889 28 16.8889V6.22222L14 0Z" fill="white"/>
+                </svg>
+                <span class="text-xl font-bold tracking-tight">Ortaklar İzolasyon</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium uppercase text-white/70">
+                <a href="#hesapla" class="hover:text-white transition">m² HESAPLA</a>
+                <a href="#hizmetler" class="hover:text-white transition">HİZMETLER</a>
+                <a href="#projeler" class="hover:text-white transition">PROJELER</a>
+                <a href="#bizkimiz" class="hover:text-white transition">BİZ KİMİZ</a>
+                <a href="#sss" class="hover:text-white transition">SSS</a>
+                <a href="#iletisim" class="hover:text-white transition">İLETİŞİM</a>
+            </div>
+
+            <a href="tel:05360378583" class="btn-glow-orange flex items-center gap-2 text-white px-5 py-2.5 rounded-full text-sm font-bold">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.19 12.65L13.11 9.57C12.8 9.26 12.28 9.26 11.97 9.57L10.33 11.21C10.04 11.5 9.57 11.52 9.26 11.25L6.75 9.07C6.44 8.8 6.42 8.33 6.71 8.04L8.35 6.4C8.66 6.09 8.66 5.57 8.35 5.26L5.27 2.18C4.96 1.87 4.44 1.87 4.13 2.18L2.56 3.75C1.83 4.48 1.63 5.56 2.06 6.5C3.33 9.3 5.67 11.64 8.47 12.91C9.41 13.34 10.49 13.14 11.22 12.41L12.79 10.84C13.1 10.53 13.62 10.53 13.93 10.84L17.01 13.92C17.32 14.23 17.32 14.75 17.01 15.06L15.06 17.01C14.23 17.84 12.87 17.9 11.98 17.15C8.98 14.61 6.36 11.99 3.82 8.99C3.07 8.1 3.13 6.74 3.96 5.91L5.91 3.96C6.22 3.65 6.74 3.65 7.05 3.96L8.13 5.04L7.05 6.12C6.74 6.43 6.74 6.95 7.05 7.26L9.56 9.77C9.87 10.08 10.39 10.08 10.7 9.77L11.78 8.69L12.86 9.77C13.17 10.08 13.17 10.6 12.86 10.91L11.78 11.99C11.47 12.3 11.47 12.82 11.78 13.13L13.86 15.21C14.17 15.52 14.69 15.52 15 15.21L16.19 14.02C16.5 13.71 16.5 13.19 16.19 12.88L16.19 12.65Z" fill="white"/>
+                </svg>
+                0536 037 8583
+            </a>
+        </div>
+    </nav>
+
+    <header class="relative z-10 flex-grow flex items-center py-24 md:py-32 px-6">
+        <div class="container mx-auto text-center">
+            
+            <div class="inline-flex items-center gap-2 border border-white/20 bg-white/5 text-xs text-white/70 px-4 py-2 rounded-full mb-10">
+                <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 18 7 18C7 18 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="white" fill-opacity="0.7"/>
+                </svg>
+                Gaziemir, İzmir
+            </div>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8">
+                <span class="text-glow-blue">Su Yalıtımında <br> Profesyonel Çözüm</span>
+            </div>
+
+            <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto mb-16">
+                Temel bohçalama, epoksi zemin, sürme izolasyon ve çatı aktarma işlerinde İzmir'in 20 yıllık güvenilir partneri. Garantili işçilik, kaliteli malzeme, uygun fiyat.
+            </p>
+
+            <div class="grid grid-cols-3 gap-6 max-w-xl mx-auto mb-16">
+                <div>
+                    <h3 class="text-5xl font-extrabold text-glow-blue">20+</h3>
+                    <p class="text-white/60 text-sm font-medium uppercase mt-2">YILLIK TECRÜBE</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-extrabold text-glow-blue">500+</h3>
+                    <p class="text-white/60 text-sm font-medium uppercase mt-2">TAMAMLANAN PROJE</p>
+                </div>
+                <div>
+                    <h3 class="text-5xl font-extrabold text-glow-blue">%100</h3>
+                    <p class="text-white/60 text-sm font-medium uppercase mt-2">MÜŞTERİ MEMNUNİYETİ</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="tel:05360378583" class="btn-glow-blue flex items-center gap-3 text-white px-10 py-4 rounded-full font-bold text-lg w-full sm:w-auto">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.19 13.65L14.11 10.57C13.8 10.26 13.28 10.26 12.97 10.57L11.33 12.21C11.04 12.5 10.57 12.52 10.26 12.25L7.75 10.07C7.44 9.8 7.42 9.33 7.71 9.04L9.35 7.4C9.66 7.09 9.66 6.57 9.35 6.26L6.27 3.18C5.96 2.87 5.44 2.87 5.13 3.18L3.56 4.75C2.83 5.48 2.63 6.56 3.06 7.5C4.33 10.3 6.67 12.64 9.47 13.91C10.41 14.34 11.49 14.14 12.22 13.41L13.79 11.84C14.1 11.53 14.62 11.53 14.93 11.84L18.01 14.92C18.32 15.23 18.32 15.75 18.01 16.06L16.06 18.01C15.23 18.84 13.87 18.9 12.98 18.15C9.98 15.61 7.36 12.99 4.82 9.99C4.07 9.1 4.13 7.74 4.96 6.91L6.91 4.96C7.22 4.65 6.74 4.65 7.05 4.96L8.13 6.04L7.05 7.12C6.74 7.43 6.74 7.95 7.05 8.26L9.56 10.77C9.87 11.08 10.39 11.08 10.7 10.77L11.78 9.69L12.86 10.77C13.17 11.08 13.17 11.6 12.86 11.91L11.78 12.99C11.47 13.3 11.47 13.82 11.78 14.13L13.86 16.21C14.17 16.52 14.69 16.52 15 16.21L16.19 15.02C16.5 14.71 16.5 14.19 16.19 13.88L16.19 13.65Z" fill="white"/>
+                    </svg>
+                    Hemen Ara - Ücretsiz Keşif
+                </a>
+                <a href="#hesapla" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg w-full sm:w-auto hover:bg-white/10 transition flex items-center justify-center gap-3">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1H3C1.9 1 1 1.9 1 3V15C1 16.1 1.9 17 3 17H15C16.1 17 17 16.1 17 15V3C17 1.9 16.1 1 15 1Z" fill="none" stroke="white" stroke-width="2"/>
+                        <rect x="5" y="11" width="2" height="2" fill="white"/>
+                        <rect x="8" y="11" width="2" height="2" fill="white"/>
+                        <rect x="11" y="11" width="2" height="2" fill="white"/>
+                        <rect x="5" y="8" width="2" height="2" fill="white"/>
+                        <rect x="8" y="8" width="2" height="2" fill="white"/>
+                        <rect x="11" y="8" width="2" height="2" fill="white"/>
+                        <rect x="5" y="5" width="2" height="2" fill="white"/>
+                        <rect x="8" y="5" width="2" height="2" fill="white"/>
+                        <rect x="11" y="5" width="2" height="2" fill="white"/>
+                    </svg>
+                    Fiyat Hesapla
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <a href="https://wa.me/905360378583" class="whatsapp-fixed flex items-center justify-center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0001 22.0001C6.47728 22.0001 2.00012 17.523 2.00012 12.0001C2.00012 6.47728 6.47728 2.00012 12.0001 2.00012C17.523 2.00012 22.0001 6.47728 22.0001 12.0001C22.0001 17.523 17.523 22.0001 12.0001 22.0001Z" stroke="white" stroke-width="2"/>
+            <path d="M16.0357 14.0734C15.8344 14.2818 15.5456 14.3315 15.3 14.1953C14.8 13.9187 14.1333 13.5187 13.5667 13.1187L11 14L11.8333 11.8L11.1 11.1C10.7333 10.7333 10.3333 10.3 10 9.8C9.86438 9.55442 9.91404 9.26558 10.1224 9.06429L11.5 7.6L12 8L13 9L13.5 10L14 11L14.5 12L15 13L15.5 14" fill="white"/>
+        </svg>
+    </a>
+
+</body>
+</html>
